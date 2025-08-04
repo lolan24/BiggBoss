@@ -28,7 +28,7 @@ USERNAME = environ.get('USERNAME', "VIS_HNU_BOT") # ADMIN USERNAME
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002398203196'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', ''))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002398203196'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906470657'))
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001906470657')) 
